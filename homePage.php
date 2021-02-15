@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>E3 2019</title>
-    <link rel="stylesheet" href="css/HomePage.css">
+    <link rel="stylesheet" href="css/homePage.css">
     <link rel="shortcut icon" href="img/E3-2019-Stats-and-Facts.png" />
 </head>
 <body>

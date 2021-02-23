@@ -1,0 +1,60 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 7px 7px;
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: black;
+}
+
+table {
+    background-color: darkblue;
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+    color: yellow;
+}
+
+h1 {
+    font-size: 25px;
+    color: yellow;
+}
+
+.buttons {
+    float: right;
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    border: none;
+    display: inline-block;
+    border-radius: 50%;
+    color: white;
+}
+
+.resetbutton {
+    background-color: red;
+}
+
+.submitbutton {
+    background-color: green;
+}

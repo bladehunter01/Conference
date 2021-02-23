@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="gr">
+<head>
+    <style>
+        body {
+            background-image: url("../img/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="shortcut icon" href="../img/E3-2019-Stats-and-Facts.png" />
+</head>
+<body>
+
+<ul>
+    <li><a class="back" href="HomePage.html">Home</a></li>
+    <li><a class="back" href="info.html">Info</a></li>
+    <li><a class="back" href="city.html">City</a></li>
+    <li><a class="back" href="judges.html">Judges</a></li>
+    <li style="float:right;margin-right:10px;"><a style="font-size:16px;" href="signup.html"> Sign up </a></li>
+    <li style="float:right;"><a style="font-size:16px;" href="pages/login.html">Log in</a></li>
+</ul>
+
+<div id="up" style="padding:100px;">
+    <div style=";margin:auto;height:650px;width:500px;background-color:orange;">
+        <form method="POST" action="../connect.php">
+            <h1 style="padding-top:20px;padding-left:20px;"> Φόρμα Εγγραφής </h1>
+            <table>
+                <tr>
+                    <td style="width:150px;">
+                        <p style="float:right;">Όνομα</p>
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="text" name="name" placeholder="Εισάγεται το Όνομά σας" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                        <p style="float:right;">Επώνυμο</p>
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="text" name="surname" placeholder="Εισάγεται το Επωνυμό σας" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="radio" id="male" name="gender" value="Male" requierd>
+                        <label style="font-size:18px;color:yellow;" for="male"> Mr </label>
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label style="font-size:18px;color:yellow;" for="female"> Mrs </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                        <p style="float:right;">E-mail</p>
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="email" name="email" placeholder="Εισάγεται E-mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                        <p style="float:right;">Τηλέφωνο</p>
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="text" name="number" placeholder="Εισάγεται τηλέφωνο" pattern="6{1}9{1}[0-9]{8}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                        <p style="float:right;">Username</p>
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="text" name="username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                        <p style="float:right;">Password</p>
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="password" name="password" minlength="6" maxlength="8" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                        <p style="float:right;">Confirm <br> Password</p>
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input type="password" name="confirm" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;">
+                    </td>
+                    <td style="padding-left:50px;">
+                        <input id="agreement" type="checkbox" name="agreement" value="agree">
+                        <label for="agreement" style="font-size:18px;color:yellow;">
+                            Συμφβνείτε να λαμβάνετε <br> ενημερωτικά email
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <input type="reset" class="buttons resetbutton" value="Ακύρωση">
+            <input type="submit" class="buttons submitbutton" name="submit" value="Αποστολή">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

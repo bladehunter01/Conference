@@ -1,0 +1,56 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 7px 7px;
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+
+}
+
+img {
+    padding-left: 18%;
+    width: 1000px;
+    height: 500px;
+}
